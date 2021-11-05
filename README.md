@@ -16,7 +16,7 @@
 
 `Open the Link`
 `Select the Beats`
-`Adjust the Temp`
+`Adjust the Tempo`
 `Hit Play`
 
 ---
