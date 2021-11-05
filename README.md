@@ -1,10 +1,6 @@
 # A 'Beats' App
 
----
-
 ## [Take a Look](https://github.com/tharun0120/beats-js)
-
----
 
 #### A modern beats app made with
 
@@ -18,7 +14,3 @@
 `Select the Beats`
 `Adjust the Tempo`
 `Hit Play`
-
----
-
-> Create Your own Music
