@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+i,
+svg {
+  pointer-events: none;
+}
+
+.sequencer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.kick-pad,
+.snare-pad,
+.highat-pad {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.kick-pad {
+  background: rgba(48, 48, 233, 0.4);
+}
+
+.kick-pad.active {
+  background: rgba(48, 48, 233, 0.8);
+}
+
+.snare-pad {
+  background: rgba(18, 219, 18, 0.4);
+}
+
+.snare-pad.active {
+  background: rgba(18, 219, 18, 0.8);
+}
+
+.highat-pad {
+  background: rgba(255, 55, 55, 0.4);
+}
+
+.highat-pad.active {
+  background: rgba(255, 55, 55, 0.8);
+}
+
+.kick-track,
+.snare-track,
+.highat-track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  padding-bottom: 3rem;
+}
+
+.kick,
+.snare,
+.highat {
+  display: flex;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  flex: 1;
+}
+
+.controls button {
+  padding: 8px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.pad {
+  transition: all 0.5s ease;
+}
+
+.play {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.play.active {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+select {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.mute.active {
+  background: rgba(0, 0, 0, 1);
+}
+
+.tempo {
+  margin: 1rem;
+  width: 30%;
+}
+
+.tempo-slider {
+  padding: 0.3rem;
+  -webkit-appearance: none;
+  margin: 1rem 0;
+  width: 100%;
+  position: relative;
+  background: black;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.tempo p {
+  font-size: 1.5rem;
+  margin: 10px;
+  text-align: center;
+}
+
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+/* Toast */
+
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: black;
+  color: #ff6f47;
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 90%;
+  bottom: 30px;
+  font-size: 1.2rem;
+}
+
+#toast.show {
+  visibility: visible;
+  animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
