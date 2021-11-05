@@ -1,6 +1,6 @@
 # A 'Beats' App
 
-## [Take a Look](https://github.com/tharun0120/beats-js)
+## [Take a Look](https://tharun0120.github.io/beats-js/ "Beats App")
 
 #### A modern beats app made with
 
