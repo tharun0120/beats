@@ -1,4 +1,4 @@
-# 🎵 Beats Maker
+# 🎵 Beats
 
 [![Live Demo](https://img.shields.io/badge/demo-live-green.svg)](https://tharun0120.github.io/beats-js/)
 
